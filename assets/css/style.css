@@ -209,6 +209,7 @@ section {
   .contact-info iframe {
       width: 400px;
       height: 400px;
+      display: inline-block;
   }
   .contact-info div {
       width: 410px;
