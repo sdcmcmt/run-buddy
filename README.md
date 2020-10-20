@@ -11,3 +11,5 @@ A website that offers fitness training services.
 https://sldowd.github.io/run-buddy/
 
 ## Made with ❤️ by Sarah Dowd
+
+### ©️2019 Run Buddy, Inc
