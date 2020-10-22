@@ -167,8 +167,8 @@ section {
       margin: 50px auto;
       padding-bottom: 50px;
       width: 80%;
-      display: flex;
       border-bottom: 1px solid #39a6b2;
+      display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
@@ -184,10 +184,12 @@ section {
       align-items: center;
       flex: 2 70%;
   }
+  .step-text {
+      flex: 12;
+  }
   .step-text p {
       color: #39a6b2;
       font-size: 18px;
-      flex: 12;
   }
   .step-text h4 {
       font-size: 26px;
@@ -195,7 +197,7 @@ section {
       color: #024e76;
   }
   .step-img {
-      flex: 0.5 12%;
+      flex: 1 12%;
       margin-right: 20px;
   }
   .step-img img {
@@ -269,7 +271,7 @@ section {
     font-style: normal;
   }
   .contact-form input, .contact-form textarea {
-      border: 1px solid #024e76
+      border: 1px solid #024e76;
       display: block;
       padding: 7px 15px;
       font-size: 16px;
@@ -294,7 +296,8 @@ section {
   /* media quieries */
   /* small desktop */
   @media screen and (max-width: 980px) {
-     header {
+    
+    header {
          padding-bottom: 0;
          justify-content: center;
      }
@@ -329,10 +332,55 @@ section {
       .contact-info iframe{
         flex: 1 100%;
       }
+
   }
   @media screen and (max-width: 768px) {
+       
+        section: {
+            padding: 30px 15px;
+        }
+        .step h3 {
+            flex: 1 100%;
+            text-align: center;
+        }
+        .step-info {
+            flex: 2 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        .step-img {
+            flex: 0 32%;
+            margin-right: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .step-text {
+            flex: 100%;
+        }
 
   }
   @media screen and (max-width: 575px) {
+        
+        .hero-form button {
+            width: 100%;
+        }
+        .section-title {
+            width: 95%;
+        }
+        .intro p {
+            width: 100%;
+        }
+        .trainer {
+            flex: 0 100%;
+        }
+        .contact-info {
+            text-align: left;
+        }
+        .contact-info > * {
+            flex: 0 100%;
+        }
+        .contact-form {
+            order: 3;
+        }
 
   }
