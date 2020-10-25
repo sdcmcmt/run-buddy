@@ -329,7 +329,9 @@ section {
       left: 0;
       opacity: 0;
       transition: opacity 0.5s;
-      dsiplay: none;
+  }
+  .trainer:hover .trainer-img::after {
+      opacity: 1;
   }
   .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
       top: 0px;
@@ -341,14 +343,12 @@ section {
       font-size: 28px;
       margin-bottom: 5px;
       top: 200px;
-      display: none;
   }
   .trainer-img h4 {
     position: relative;
     z-index: 100;
     font-size: 22px;
     top: 200px;
-    display: none;
 }
   .trainer-1 {
       background-image: url("../images/trainer-1.jpg")
@@ -366,6 +366,7 @@ section {
   .trainer-bio h3 {
       font-size: 28px;
       display: none;
+    
   }
   .trainer-bio h4 {
       font-weight: lighter;
@@ -546,7 +547,7 @@ section {
 
   @media screen and (max-width: 768px) {
        
-        section: {
+        section {
             padding: 30px 15px;
         }
         .step h3 {
@@ -567,8 +568,8 @@ section {
         .step-text {
             flex: 100%;
         }
-        .trainer-img h3, .trainer-img h4, .trainer-img::after {
-            display: inline;
+        .trainer-bio h3, .trainer-bio h4, .trainer-img::after {
+            display: block;
         }
 
   }
