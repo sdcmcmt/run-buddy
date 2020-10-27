@@ -19,6 +19,7 @@ var fight =function() {
 
     //if player chooses to fight then fight
     if (prompFight === "fight" || promptFight === "FIGHT") {
+
     enemyHealth = enemyHealth - playerAttack;
     //Log a resulting message to the console so we know that it worked.
     console.log(
